@@ -97,7 +97,24 @@ df_snap_all, df_trends_all, df_analyst, df_offering = load_all()
 # Sidebar controls
 # ----------------------------
 st.sidebar.markdown("## Controls")
-snapshot_year = int(st.sidebar.slider("Snapshot year", min_value=int(df_snap_all["year"].min()), max_value=int(df_snap_all["year"].max()), value=int(df_snap_all["year"].max()), step=1))
+# Robust year selector (avoids Streamlit slider type/range issues when only one year or missing years)
+_years = (
+    pd.to_numeric(df_snap_all["year"], errors="coerce")
+    .dropna()
+    .astype(int)
+    .unique()
+    .tolist()
+)
+_years = sorted(_years)
+
+if len(_years) == 0:
+    st.sidebar.error("No valid years found in data/benchmark_snapshot.csv (column: year).")
+    snapshot_year = 0
+elif len(_years) == 1:
+    snapshot_year = int(_years[0])
+    st.sidebar.info(f"Snapshot year fixed to {snapshot_year} (only one year in dataset).")
+else:
+    snapshot_year = int(st.sidebar.select_slider("Snapshot year", options=_years, value=_years[-1]))
 
 peer_groups = st.sidebar.multiselect(
     "Peer groups",
@@ -141,6 +158,10 @@ def median_for(bucket: str, key: str) -> float:
     else:
         s = df_snap_f[df_snap_f["country_group"] == "International"][key]
     return float(s.median()) if len(s) else float("nan")
+
+# If no valid years, stop here to show sidebar error without crashing
+if snapshot_year == 0:
+    st.stop()
 
 # ----------------------------
 # Header
