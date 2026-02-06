@@ -128,7 +128,33 @@ if "revenue_per_employee_keur" not in df_trends_all.columns and "headcount" in d
 # -------------------------------------------------
 st.sidebar.markdown("## Controls")
 
-presentation_mode = st.sidebar.toggle("Presentation mode (minimal UI)", value=False, help="Hides sidebar & technical labels for executive presenting.")
+# -------------------------------------------------
+# Presentation mode (safe toggle + exit)
+# - uses URL query param: ?present=1
+# - always shows a top-right button to exit/enter
+# -------------------------------------------------
+q = st.query_params
+presentation_mode = str(q.get("present", "0")).lower() in ("1", "true", "yes", "on")
+
+topbar = st.columns([6, 3, 2])
+with topbar[0]:
+    st.caption("Tip: share presentation link by adding `?present=1` to the URL.")
+with topbar[2]:
+    if presentation_mode:
+        if st.button("Exit presentation mode"):
+            st.query_params["present"] = "0"
+            st.rerun()
+    else:
+        if st.button("Presentation mode"):
+            st.query_params["present"] = "1"
+            st.rerun()
+
+# Optional sidebar mirror (when sidebar is visible)
+if not presentation_mode:
+    if st.sidebar.toggle("Presentation mode (minimal UI)", value=False):
+        st.query_params["present"] = "1"
+        st.rerun()
+
 if presentation_mode:
     st.markdown("""
     <style>
@@ -156,17 +182,46 @@ peer_groups = st.sidebar.multiselect(
     help="Choose which peer groups to include in medians and visuals.",
 )
 
-include_estimated = st.sidebar.toggle(
-    "Include estimated / inferred data",
-    value=True,
-    help="If off, keeps only rows where Confidence = public.",
+# Reset filters (safe for demos)
+if "reset_filters" not in st.session_state:
+    st.session_state.reset_filters = False
+
+if st.sidebar.button("Reset filters"):
+    st.session_state.reset_filters = True
+    st.rerun()
+
+# Confidence filter (more explicit than on/off)
+confidence_options = ["public", "estimated", "inferred"]
+default_conf = confidence_options
+selected_confidence = st.sidebar.multiselect(
+    "Confidence filter",
+    options=confidence_options,
+    default=default_conf,
+    help="Choose which confidence tags to include. public = sourced, estimated = best-effort, inferred = model/forecast.",
 )
 
+# Company search + drill-down
+company_search = st.sidebar.text_input(
+    "Search company",
+    value="",
+    help="Filters the drill-down company list.",
+)
+company_options = sorted(df_snap_all["company"].dropna().unique())
+if company_search.strip():
+    company_options = [c for c in company_options if company_search.strip().lower() in c.lower()]
+if len(company_options) == 0:
+    company_options = sorted(df_snap_all["company"].dropna().unique())
+
+default_company = TARGET if TARGET in company_options else company_options[0]
 company_drill = st.sidebar.selectbox(
     "Drill-down company",
-    options=sorted(df_snap_all["company"].dropna().unique()),
-    index=sorted(df_snap_all["company"].dropna().unique()).index(TARGET) if TARGET in df_snap_all["company"].unique() else 0
+    options=company_options,
+    index=company_options.index(default_company),
 )
+
+# After reset, clear the flag (one-shot)
+if st.session_state.reset_filters:
+    st.session_state.reset_filters = False
 
 trend_metric_key = st.sidebar.selectbox(
     "Trend metric",
@@ -190,16 +245,16 @@ wage_infl = st.sidebar.slider("Wage inflation (%)", 0.0, 10.0, 3.0, 0.5)
 # -------------------------------------------------
 df_snap = df_snap_all[df_snap_all["year"] == snapshot_year].copy()
 
-if not include_estimated and "data_confidence" in df_snap.columns:
-    df_snap = df_snap[df_snap["data_confidence"].fillna("estimated") == "public"].copy()
+if "data_confidence" in df_snap.columns:
+    df_snap = df_snap[df_snap["data_confidence"].fillna("estimated").isin(selected_confidence)].copy()
 
 df_snap["peer_bucket"] = np.where(df_snap["company"] == TARGET, "Siili", df_snap["country_group"])
 selected_buckets = ["Siili"] + peer_groups
 df_snap_f = df_snap[df_snap["peer_bucket"].isin(selected_buckets)].copy()
 
 df_trends = df_trends_all.copy()
-if not include_estimated and "data_confidence" in df_trends.columns:
-    df_trends = df_trends[df_trends["data_confidence"].fillna("estimated") == "public"].copy()
+if "data_confidence" in df_trends.columns:
+    df_trends = df_trends[df_trends["data_confidence"].fillna("estimated").isin(selected_confidence)].copy()
 if not show_forecasts:
     df_trends = df_trends[df_trends["year"] <= snapshot_year].copy()
 df_trends_f = df_trends[df_trends["country_group"].isin(peer_groups + ["Target"])].copy()
@@ -327,6 +382,19 @@ with c1:
     st.markdown(f"**So what?**  \n{so}")
 with c2:
     st.markdown(f"**Recommended action**  \n{act}")
+
+with st.expander("Definitions & how to read this dashboard"):
+    st.markdown(
+        """
+- **Green vs red deltas:** green means "better" according to KPI direction (e.g., higher EBITDA is good, lower cost-% is good).
+- **Revenue / Employee (kEUR):** a productivity proxy. Higher can come from pricing power, utilization, or service mix.
+- **Confidence tags:**
+  - **public**: sourced number
+  - **estimated**: best-effort estimate (e.g., reconstructed from public commentary)
+  - **inferred**: model/forecast derived from historical trends
+- **Forecast shading in trends:** the shaded area indicates years beyond the snapshot year (typically next 2 years).
+        """
+    )
 
 # -------------------------------------------------
 # Trends
@@ -475,7 +543,13 @@ with tabs[2]:
     fig.update_layout(template="plotly_dark", height=560, margin=dict(l=10,r=10,t=10,b=10),
                       legend=dict(orientation="h", y=-0.2),
                       xaxis=dict(range=xr), yaxis=dict(range=yr))
-    st.plotly_chart(fig, use_container_width=True)
+    # Quadrant labels (executive-friendly)
+fig.add_annotation(x=xr[0]+0.05*(xr[1]-xr[0]), y=yr[1]-0.05*(yr[1]-yr[0]), text="High margin / Lower productivity", showarrow=False, font=dict(size=12, color="rgba(255,255,255,0.65)"))
+fig.add_annotation(x=xr[1]-0.30*(xr[1]-xr[0]), y=yr[1]-0.05*(yr[1]-yr[0]), text="High margin / High productivity", showarrow=False, font=dict(size=12, color="rgba(255,255,255,0.65)"))
+fig.add_annotation(x=xr[0]+0.05*(xr[1]-xr[0]), y=yr[0]+0.05*(yr[1]-yr[0]), text="Lower margin / Lower productivity", showarrow=False, font=dict(size=12, color="rgba(255,255,255,0.65)"))
+fig.add_annotation(x=xr[1]-0.32*(xr[1]-xr[0]), y=yr[0]+0.05*(yr[1]-yr[0]), text="Lower margin / High productivity", showarrow=False, font=dict(size=12, color="rgba(255,255,255,0.65)"))
+
+st.plotly_chart(fig, use_container_width=True)
     st.caption("Color = competitor archetype (explainable rules). Symbol = Siili vs peer group. Hover shows confidence tag.")
 
 # Heatmap
@@ -596,7 +670,7 @@ with tabs[7]:
         "snapshot_year": snapshot_year,
         "kpis": {m.label: (float(siili[m.key]) if siili is not None and pd.notna(siili[m.key]) else None) for m in METRICS},
         "peer_groups": peer_groups,
-        "include_estimated": include_estimated,
+        "confidence_filter": selected_confidence,
         "notes": "This is an auto-generated share snapshot. For full interactivity, use the live Streamlit link.",
     }
     html = f"""<!doctype html>
@@ -607,7 +681,7 @@ with tabs[7]:
 <h2>Executive KPI summary</h2>
 <pre style="background:#f6f8fa;padding:16px;border-radius:10px;">{pd.Series(summary['kpis']).to_string()}</pre>
 <p><b>Peer groups:</b> {", ".join(peer_groups) if peer_groups else "–"}</p>
-<p><b>Include estimated:</b> {include_estimated}</p>
+<p><b>Confidence filter:</b> {', '.join(selected_confidence) if selected_confidence else '–'}</p>
 <p style="opacity:0.7">{summary['notes']}</p>
 </body></html>"""
     st.download_button("Download share_pack.html", data=html.encode("utf-8"), file_name="share_pack.html", mime="text/html")
