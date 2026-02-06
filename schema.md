@@ -1,3 +1,5 @@
+[schema.md](https://github.com/user-attachments/files/25127062/schema.md)
+[schema.md](https://github.com/user-attachments/files/25127062/schema.md)
 # Data schema (v5)
 
 All dataset columns are **snake_case** and stable for downstream usage.
@@ -36,31 +38,24 @@ Same as snapshot but without `revenue_per_employee_keur` and `source_note`.
 ## data/strategic_offering.csv
 - `company`, `country_group`, `service_focus`, `delivery_model`, `industry_focus`, `scale_bucket`
 
-[schema.md](https://github.com/user-attachments/files/25126654/schema.md)
-# Public-only data schema (v7)
+## Confidence tagging (all benchmark datasets)
+- `data_confidence` (public | estimated | inferred)
 
-This version is **public-only**: no internal, estimated, inferred, or heuristic datasets are included.
+## data/peer_offering_heatmap.csv
+- `company`, `country_group`
+- `capability_key`, `capability`
+- `focus_score_0to3`
+- `confidence`
+- `source_hint`
 
-## data/benchmark_snapshot_public.csv
-One row per company for the selected snapshot year (currently Siili only). Columns are UI-friendly for direct use:
+## data/competitive_intensity.csv
+- `company`, `country_group`
+- `pricing_pressure_1to5`
+- `regulated_industries_1to3`
+- `delivery_scale_1to3`
+- `competitive_intensity_index`
+- `confidence`
+- `source_hint`
 
-- Year
-- Company
-- Peer Group
-- Revenue (€m)
-- EBITDA (%)
-- Headcount
-- Revenue / Employee (k€)
-- Personnel cost (% of revenue)  *(optional if you add public data)*
-- Outsourcing (% of revenue)     *(optional if you add public data)*
-- Billable (%)                  *(optional)*
-- Senior (%)                    *(optional)*
-- Offshore (%)                  *(optional)*
-- Data confidence  (public)
-- Source
-
-## data/benchmark_trends_public.csv
-Multi-year trends (2019–2024) with the same naming conventions.
-
-### Source (Siili)
-Investor site Key figures table (Revenue, EBITDA, Employees).
+## Trend forecasts
+`data/benchmark_trends.csv` now includes the next two years (2025–2026) as **inferred** values derived from historical trends (CAGR + margin drift).
