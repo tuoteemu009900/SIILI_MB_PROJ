@@ -1,0 +1,30 @@
+Company,Region,Year,Revenue_EURm,EBITDA_pct,Headcount,PersonnelCost_pct,Outsourcing_pct,Billable_pct,Senior_pct,Offshore_pct,DataQuality,SourceNote,RevenuePerEmployee_EURk
+Siili Solutions,Finland (Peer),2019,80.544,8.8,737.0,,,,,,reported,"Siili IR key figures (Revenue, EBITDA%, headcount)",109.28629579375848
+Siili Solutions,Finland (Peer),2020,83.307,11.0,676.0,,,,,,reported,"Siili IR key figures (Revenue, EBITDA%, headcount)",123.23520710059172
+Siili Solutions,Finland (Peer),2021,99.282,12.1,885.0,,,,,,reported,"Siili IR key figures (Revenue, EBITDA%, headcount)",112.18305084745762
+Siili Solutions,Finland (Peer),2022,118.334,12.6,1045.0,63.7,,,,,estimated_imputed,"Siili IR key figures (Revenue, EBITDA%, headcount)",113.23827751196173
+Siili Solutions,Finland (Peer),2023,122.702,9.9,1007.0,59.5,40.935893586501834,,,,estimated_imputed,"Siili IR key figures (Revenue, EBITDA%, headcount)",121.84905660377359
+Siili Solutions,Finland (Peer),2024,111.899,7.3,942.0,62.5,40.36757652467015,,,,estimated_imputed,"Siili IR key figures (Revenue, EBITDA%, headcount)",118.78874734607218
+Gofore,Finland (Peer),2023,189.241,14.1,1465.0,59.5,18.0,,,,reported,"Gofore Annual Report 2024 (net sales, adj EBITA%, personnel costs%, subcontracting%, employees)",129.17474402730375
+Gofore,Finland (Peer),2024,186.166,12.8,1471.0,62.5,16.0,,,,reported,"Gofore Annual Report 2024 (net sales, adj EBITA%, personnel costs%, subcontracting%, employees)",126.5574439157036
+Vincit,Finland (Peer),2022,84.789,4.3,,63.7,,,,,reported,"Vincit Financial Statements 2024 (revenue, EBITDA%, personnel costs%)",
+Vincit,Finland (Peer),2023,98.085,2.0,720.0,63.7,40.935893586501834,,,,estimated_imputed,"Vincit Financial Statements 2024 (revenue, EBITDA%, personnel costs%, headcount)",136.22916666666666
+Vincit,Finland (Peer),2024,84.647,0.6,640.0,63.1,40.36757652467015,,,,estimated_imputed,"Vincit Financial Statements 2024 (revenue, EBITDA%, personnel costs%, headcount)",132.2609375
+Witted Megacorp,Finland (Peer),2023,64.10070562,,205.0,30.685358935991072,63.87178717300366,,,,reported,Witted 2024 report (income statement 2023; avg personnel),312.68636887804877
+Witted Megacorp,Finland (Peer),2024,53.48645629,,149.0,28.08493796738688,64.7351530493403,,,,reported,Witted 2024 report (income statement 2024; avg personnel),358.96950530201343
+Digital Workforce Services,Finland (Peer),2024,27.256,3.624889932491928,175.0,62.5,40.36757652467015,,,,estimated_imputed,Digital Workforce FY2024 bulletin: net sales 27.256m; EBITDA adj 0.988m; personnel end 175,155.74857142857144
+Digital Workforce Services,Finland (Peer),2023,24.9,0.8032128514056225,,59.5,40.935893586501834,,,,estimated_imputed,Digital Workforce Board report 2023: revenue 24.9m; adjusted EBITDA 0.2m,
+Solteq,Finland (Peer),2022,68.426,8.1,,63.7,,,,,estimated_imputed,Solteq Financial Statements Bulletin 2022: revenue 68.426m; EBITDA% 8.1%,
+Solteq,Finland (Peer),2024,50.869,8.0,390.0,62.5,40.36757652467015,,,,estimated_imputed,Placeholder; replace with verified FY2024 figures,130.43333333333334
+Sopra Steria,International (Peer),2023,5805.0,9.4,,,,,,,reported,Sopra Steria FY2023 press release: revenue 5.805b; operating margin 9.4%,
+Sopra Steria,International (Peer),2024,5776.8,9.8,,,,,,,reported,"Sopra Steria FY2024 press release: revenue 5,776.8m; operating margin 9.8%",
+Reply,International (Peer),2021,1483.803,17.710167724421634,10579.0,,,,,,reported,"Reply Annual Financial Report highlights: revenue, gross operating income, employees",140.25928726722753
+Reply,International (Peer),2022,1891.114,17.995319161087064,13467.0,,,,,,reported,"Reply Annual Financial Report highlights: revenue, gross operating income, employees",140.42578154006088
+Reply,International (Peer),2023,2117.983,16.623976679699506,14798.0,,,,,,reported,"Reply Annual Financial Report highlights: revenue, gross operating income, employees",143.12630085146643
+Reply,International (Peer),2024,2295.938,17.884237292122,15667.0,,,,,,reported,"Reply Annual Financial Report highlights: revenue, gross operating income, employees",146.54611604008426
+Endava,International (Peer),2023,938.62017,20.7,,,,,,,reported,Endava FY2023 results: revenue £794.7m; adj PBT 20.7% of revenue (proxy),
+Endava,International (Peer),2024,874.95888,11.2,,,,,,,reported,Endava FY2024 results: revenue £740.8m; adj PBT 11.2% of revenue (proxy),
+Cegeka,International (Peer),2023,1030.0,16.310679611650485,,,,,,,reported,Cegeka Annual Report 2023: revenue 1.03b; operating result 168m (proxy; includes one-offs),
+Cegeka,International (Peer),2024,1300.0,6.0,,,,,,,reported,Cegeka Annual Report 2024: revenue 1.3b; operating profit 78m (proxy),
+Alten,International (Peer),2024,4143.3,9.1,,,,,,,estimated,Placeholder; replace with verified FY2024 operating margin,
+Tietoevry,Finland (Peer),2024,3000.0,10.0,23000.0,62.5,40.36757652467015,,,,estimated_imputed,Placeholder; replace with verified FY2024 figures,130.43478260869566
