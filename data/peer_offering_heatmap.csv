@@ -1,0 +1,133 @@
+company,country_group,capability_key,capability,focus_score_0to3,confidence,source_hint
+Siili Solutions,Target,strategy_design,Strategy & Design,1,estimated,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Siili Solutions,Target,data_ai,Data & AI,3,estimated,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Siili Solutions,Target,cloud_platform,Cloud & Platforms,2,estimated,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Siili Solutions,Target,custom_software,Custom Software Dev,2,estimated,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Siili Solutions,Target,enterprise_platforms,Enterprise Platforms,1,estimated,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Siili Solutions,Target,managed_services,Managed Services / Ops,1,estimated,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Siili Solutions,Target,cybersecurity,Cybersecurity,1,estimated,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Siili Solutions,Target,embedded_iot,Embedded / IoT / Engineering,2,estimated,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Siili Solutions,Target,commerce_dx,Commerce / Digital Experience,1,estimated,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Siili Solutions,Target,automation_rpa,Automation / RPA,1,estimated,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Siili Solutions,Target,near_offshore,Near/Offshore Delivery,1,estimated,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Gofore,Finland,strategy_design,Strategy & Design,2,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Gofore,Finland,data_ai,Data & AI,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Gofore,Finland,cloud_platform,Cloud & Platforms,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Gofore,Finland,custom_software,Custom Software Dev,2,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Gofore,Finland,enterprise_platforms,Enterprise Platforms,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Gofore,Finland,managed_services,Managed Services / Ops,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Gofore,Finland,cybersecurity,Cybersecurity,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Gofore,Finland,embedded_iot,Embedded / IoT / Engineering,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Gofore,Finland,commerce_dx,Commerce / Digital Experience,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Gofore,Finland,automation_rpa,Automation / RPA,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Gofore,Finland,near_offshore,Near/Offshore Delivery,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Vincit,Finland,strategy_design,Strategy & Design,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Vincit,Finland,data_ai,Data & AI,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Vincit,Finland,cloud_platform,Cloud & Platforms,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Vincit,Finland,custom_software,Custom Software Dev,3,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Vincit,Finland,enterprise_platforms,Enterprise Platforms,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Vincit,Finland,managed_services,Managed Services / Ops,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Vincit,Finland,cybersecurity,Cybersecurity,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Vincit,Finland,embedded_iot,Embedded / IoT / Engineering,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Vincit,Finland,commerce_dx,Commerce / Digital Experience,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Vincit,Finland,automation_rpa,Automation / RPA,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Vincit,Finland,near_offshore,Near/Offshore Delivery,2,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Digital Workforce Services,Finland,strategy_design,Strategy & Design,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Digital Workforce Services,Finland,data_ai,Data & AI,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Digital Workforce Services,Finland,cloud_platform,Cloud & Platforms,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Digital Workforce Services,Finland,custom_software,Custom Software Dev,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Digital Workforce Services,Finland,enterprise_platforms,Enterprise Platforms,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Digital Workforce Services,Finland,managed_services,Managed Services / Ops,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Digital Workforce Services,Finland,cybersecurity,Cybersecurity,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Digital Workforce Services,Finland,embedded_iot,Embedded / IoT / Engineering,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Digital Workforce Services,Finland,commerce_dx,Commerce / Digital Experience,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Digital Workforce Services,Finland,automation_rpa,Automation / RPA,3,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Digital Workforce Services,Finland,near_offshore,Near/Offshore Delivery,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Witted Megacorp,Finland,strategy_design,Strategy & Design,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Witted Megacorp,Finland,data_ai,Data & AI,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Witted Megacorp,Finland,cloud_platform,Cloud & Platforms,2,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Witted Megacorp,Finland,custom_software,Custom Software Dev,3,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Witted Megacorp,Finland,enterprise_platforms,Enterprise Platforms,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Witted Megacorp,Finland,managed_services,Managed Services / Ops,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Witted Megacorp,Finland,cybersecurity,Cybersecurity,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Witted Megacorp,Finland,embedded_iot,Embedded / IoT / Engineering,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Witted Megacorp,Finland,commerce_dx,Commerce / Digital Experience,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Witted Megacorp,Finland,automation_rpa,Automation / RPA,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Witted Megacorp,Finland,near_offshore,Near/Offshore Delivery,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Tietoevry,Finland,strategy_design,Strategy & Design,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Tietoevry,Finland,data_ai,Data & AI,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Tietoevry,Finland,cloud_platform,Cloud & Platforms,2,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Tietoevry,Finland,custom_software,Custom Software Dev,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Tietoevry,Finland,enterprise_platforms,Enterprise Platforms,2,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Tietoevry,Finland,managed_services,Managed Services / Ops,2,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Tietoevry,Finland,cybersecurity,Cybersecurity,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Tietoevry,Finland,embedded_iot,Embedded / IoT / Engineering,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Tietoevry,Finland,commerce_dx,Commerce / Digital Experience,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Tietoevry,Finland,automation_rpa,Automation / RPA,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Tietoevry,Finland,near_offshore,Near/Offshore Delivery,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Solteq,Finland,strategy_design,Strategy & Design,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Solteq,Finland,data_ai,Data & AI,2,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Solteq,Finland,cloud_platform,Cloud & Platforms,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Solteq,Finland,custom_software,Custom Software Dev,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Solteq,Finland,enterprise_platforms,Enterprise Platforms,2,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Solteq,Finland,managed_services,Managed Services / Ops,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Solteq,Finland,cybersecurity,Cybersecurity,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Solteq,Finland,embedded_iot,Embedded / IoT / Engineering,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Solteq,Finland,commerce_dx,Commerce / Digital Experience,2,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Solteq,Finland,automation_rpa,Automation / RPA,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Solteq,Finland,near_offshore,Near/Offshore Delivery,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Sopra Steria,International,strategy_design,Strategy & Design,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Sopra Steria,International,data_ai,Data & AI,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Sopra Steria,International,cloud_platform,Cloud & Platforms,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Sopra Steria,International,custom_software,Custom Software Dev,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Sopra Steria,International,enterprise_platforms,Enterprise Platforms,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Sopra Steria,International,managed_services,Managed Services / Ops,2,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Sopra Steria,International,cybersecurity,Cybersecurity,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Sopra Steria,International,embedded_iot,Embedded / IoT / Engineering,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Sopra Steria,International,commerce_dx,Commerce / Digital Experience,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Sopra Steria,International,automation_rpa,Automation / RPA,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Sopra Steria,International,near_offshore,Near/Offshore Delivery,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Reply,International,strategy_design,Strategy & Design,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Reply,International,data_ai,Data & AI,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Reply,International,cloud_platform,Cloud & Platforms,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Reply,International,custom_software,Custom Software Dev,2,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Reply,International,enterprise_platforms,Enterprise Platforms,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Reply,International,managed_services,Managed Services / Ops,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Reply,International,cybersecurity,Cybersecurity,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Reply,International,embedded_iot,Embedded / IoT / Engineering,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Reply,International,commerce_dx,Commerce / Digital Experience,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Reply,International,automation_rpa,Automation / RPA,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Reply,International,near_offshore,Near/Offshore Delivery,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Endava,International,strategy_design,Strategy & Design,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Endava,International,data_ai,Data & AI,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Endava,International,cloud_platform,Cloud & Platforms,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Endava,International,custom_software,Custom Software Dev,3,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Endava,International,enterprise_platforms,Enterprise Platforms,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Endava,International,managed_services,Managed Services / Ops,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Endava,International,cybersecurity,Cybersecurity,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Endava,International,embedded_iot,Embedded / IoT / Engineering,2,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Endava,International,commerce_dx,Commerce / Digital Experience,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Endava,International,automation_rpa,Automation / RPA,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Endava,International,near_offshore,Near/Offshore Delivery,3,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Alten,International,strategy_design,Strategy & Design,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Alten,International,data_ai,Data & AI,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Alten,International,cloud_platform,Cloud & Platforms,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Alten,International,custom_software,Custom Software Dev,2,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Alten,International,enterprise_platforms,Enterprise Platforms,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Alten,International,managed_services,Managed Services / Ops,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Alten,International,cybersecurity,Cybersecurity,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Alten,International,embedded_iot,Embedded / IoT / Engineering,3,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Alten,International,commerce_dx,Commerce / Digital Experience,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Alten,International,automation_rpa,Automation / RPA,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Alten,International,near_offshore,Near/Offshore Delivery,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Cegeka,International,strategy_design,Strategy & Design,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Cegeka,International,data_ai,Data & AI,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Cegeka,International,cloud_platform,Cloud & Platforms,2,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Cegeka,International,custom_software,Custom Software Dev,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Cegeka,International,enterprise_platforms,Enterprise Platforms,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Cegeka,International,managed_services,Managed Services / Ops,2,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Cegeka,International,cybersecurity,Cybersecurity,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Cegeka,International,embedded_iot,Embedded / IoT / Engineering,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Cegeka,International,commerce_dx,Commerce / Digital Experience,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Cegeka,International,automation_rpa,Automation / RPA,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.
+Cegeka,International,near_offshore,Near/Offshore Delivery,1,inferred,Derived from public positioning keywords (heuristic). Update manually for accuracy.

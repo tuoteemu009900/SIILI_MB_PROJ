@@ -1,0 +1,13 @@
+company,country_group,pricing_pressure_1to5,regulated_industries_1to3,delivery_scale_1to3,competitive_intensity_index,confidence,source_hint
+Siili Solutions,Target,3,2,2,2.45,inferred,Heuristic index from scale/delivery/industry mix; replace with validated research where available.
+Gofore,Finland,3,3,2,2.7,inferred,Heuristic index from scale/delivery/industry mix; replace with validated research where available.
+Vincit,Finland,3,2,2,2.45,inferred,Heuristic index from scale/delivery/industry mix; replace with validated research where available.
+Digital Workforce Services,Finland,3,2,2,2.45,inferred,Heuristic index from scale/delivery/industry mix; replace with validated research where available.
+Witted Megacorp,Finland,3,2,2,2.45,inferred,Heuristic index from scale/delivery/industry mix; replace with validated research where available.
+Tietoevry,Finland,3,3,2,2.7,inferred,Heuristic index from scale/delivery/industry mix; replace with validated research where available.
+Solteq,Finland,3,2,2,2.45,inferred,Heuristic index from scale/delivery/industry mix; replace with validated research where available.
+Sopra Steria,International,5,3,3,3.9,inferred,Heuristic index from scale/delivery/industry mix; replace with validated research where available.
+Reply,International,5,3,3,3.9,inferred,Heuristic index from scale/delivery/industry mix; replace with validated research where available.
+Endava,International,5,2,3,3.65,inferred,Heuristic index from scale/delivery/industry mix; replace with validated research where available.
+Alten,International,5,2,3,3.65,inferred,Heuristic index from scale/delivery/industry mix; replace with validated research where available.
+Cegeka,International,5,2,3,3.65,inferred,Heuristic index from scale/delivery/industry mix; replace with validated research where available.
