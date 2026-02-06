@@ -35,3 +35,32 @@ Same as snapshot but without `revenue_per_employee_keur` and `source_note`.
 
 ## data/strategic_offering.csv
 - `company`, `country_group`, `service_focus`, `delivery_model`, `industry_focus`, `scale_bucket`
+
+[schema.md](https://github.com/user-attachments/files/25126654/schema.md)
+# Public-only data schema (v7)
+
+This version is **public-only**: no internal, estimated, inferred, or heuristic datasets are included.
+
+## data/benchmark_snapshot_public.csv
+One row per company for the selected snapshot year (currently Siili only). Columns are UI-friendly for direct use:
+
+- Year
+- Company
+- Peer Group
+- Revenue (€m)
+- EBITDA (%)
+- Headcount
+- Revenue / Employee (k€)
+- Personnel cost (% of revenue)  *(optional if you add public data)*
+- Outsourcing (% of revenue)     *(optional if you add public data)*
+- Billable (%)                  *(optional)*
+- Senior (%)                    *(optional)*
+- Offshore (%)                  *(optional)*
+- Data confidence  (public)
+- Source
+
+## data/benchmark_trends_public.csv
+Multi-year trends (2019–2024) with the same naming conventions.
+
+### Source (Siili)
+Investor site Key figures table (Revenue, EBITDA, Employees).
